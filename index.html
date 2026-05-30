@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <title>KE</title>
+</head>
+
+<body>
+  <div id="controls">
+    <div class="col">
+      <span class="label">Color</span>
+      <input type="color" name="colorInp" id="colorInp">
+    </div>
+    <div class="col">
+      <span class="label">Width</span>
+      <input type="number" value=10 name="strokewidth" id="strokeWidth">
+    </div>
+    <div class="col">
+      <span class="label">Tools</span>
+      <div class="row">
+        <button class="tools" id="brush">Brush</button>
+        <button class="tools" id="eraser">Eraser</button>
+        <button class="tools" id="fill">Fill</button>
+      </div>
+    </div>
+  </div>
+  <canvas id="screen"></canvas>
+  <script src="main.js" defer>
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tools {
+      margin: 1px;
+      padding: 2px;
+      width: 50px;  
+    }
+
+    body {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 200px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    canvas {
+      border: 2px solid black;
+    }
+
+    .label {
+      padding: 4px;
+    }
+
+    #controls {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid black;
+    }
+  </style>
+</body>
+
+</html>
